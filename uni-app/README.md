@@ -2,7 +2,7 @@
 
 # 1. 注册友盟+账号(如已经注册可忽略)
 
-# 2.友盟官网申请appkey
+# 2.友盟官网申请appkey(需要分别申请各个平台的appkey)
 [web](https://apm.umeng.com/web/dash/list)
 
 [小程序](https://apm.umeng.com/web/dash/list)
@@ -28,7 +28,7 @@ yarn add @umengfe/mini-apm --save
 import { init } from "@umengfe/mini-apm/build/wx.esm";
 init({
   pageFilter: { mode: "ignore", rules: [] },
-  pid: "appkey",
+  appKey: "appkey",
 });
 // #endif
 
@@ -36,7 +36,7 @@ init({
 import { init } from "@umengfe/mini-apm/build/alipay.esm";
 init({
   pageFilter: { mode: "ignore", rules: [] },
-  pid: "appkey",
+  appKey: "appkey",
 });
 // #endif
 

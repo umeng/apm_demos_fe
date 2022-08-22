@@ -2,7 +2,7 @@
 import { init } from "@umengfe/mini-apm/build/wx.esm";
 init({
   pageFilter: { mode: "ignore", rules: [] },
-  pid: "appkey",
+  appKey: "appkey",
 });
 // #endif
 
@@ -10,7 +10,7 @@ init({
 import { init } from "@umengfe/mini-apm/build/alipay.esm";
 init({
   pageFilter: { mode: "ignore", rules: [] },
-  pid: "appkey",
+  appKey: "appkey",
 });
 // #endif
 
