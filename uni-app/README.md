@@ -20,9 +20,9 @@ yarn add @umengfe/mini-apm --save
 ```
 
 # 6.利用条件编译集成sdk
-参考工程中的uapm.js
-
-***uapm.js***
+[uapm.js](./src/uapm.js)
+参考 7 中 各个平台的集成文档，修改初始化的参数配置
+***./src/uapm.js***
 ```js
 // #ifdef MP-WEIXIN
 import { init } from "@umengfe/mini-apm/build/wx.esm";
@@ -50,9 +50,9 @@ init({
 // #endif
 ```
 
-在main.js中引入该uapm.js
+在[main.js](./src/main.js)中引入[uapm.js](./src/uapm.js)
 
-***main.js***
+***./src/main.js***
 
 ```js
 import Vue from 'vue'
